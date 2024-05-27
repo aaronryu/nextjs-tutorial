@@ -1,11 +1,20 @@
 import ClientMenuButton from '@/app/dashboard/menu-client'
 import ServerMenuButton from '@/app/dashboard/menu-server'
+import Image from 'next/image'
 
 export default function DashboardLayout({ children }) {
   return (
     <div className='flex h-screen flex-col md:flex-row md:overflow-hidden'>
       <div className='w-full flex-none md:w-64'>
-        <ClientMenuButton href='/'>Logo</ClientMenuButton>
+        <ClientMenuButton href='/'>
+          <Image
+            src='/vercel.svg'
+            alt='Next.js 에서 이미지를 넣을때는 다음과 같이 최적화된 커스텀 컴포넌트 <Image> 추가'
+            width={100}
+            height={24}
+            priority
+          />
+        </ClientMenuButton>
         <ServerMenuButton href='/dashboard'>1. Dashboard</ServerMenuButton>
         <ServerMenuButton href='/dashboard/invoices'>2. Invoices</ServerMenuButton>
         <ServerMenuButton href='/dashboard/customers'>3. Customers</ServerMenuButton>
