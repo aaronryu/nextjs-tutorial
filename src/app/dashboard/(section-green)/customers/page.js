@@ -1,7 +1,4 @@
 export default function Customers() {
-  if (true) {
-    throw new Error('일부러 에러 발생')
-  }
   return (
     <main className='flex min-h-screen flex-col items-center p-24'>
       <div className='text-gray-500'>

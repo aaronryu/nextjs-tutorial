@@ -1,3 +1,11 @@
+export function generateStaticParams() {
+  return [
+    { type: 'payment', detail: 'billing' },
+    { type: 'housing', detail: 'contract' },
+    { type: 'employ', detail: 'member' },
+  ]
+}
+
 export default function InvoicesInformation(/* context */ { params, searchParams }) {
   /**
    * Context 객체 구성요소
