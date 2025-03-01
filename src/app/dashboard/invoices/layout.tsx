@@ -1,4 +1,10 @@
 import React from 'react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'InvoiceLayout title',
+  description: 'InvoiceLayout description',
+}
 
 export default function InvoiceLayout({ children }) {
   return (

@@ -1,4 +1,10 @@
 import React from 'react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'DashboardLayout title',
+  description: 'DashboardLayout description',
+}
 
 export default function DashboardLayout({ children }) {
   return (
