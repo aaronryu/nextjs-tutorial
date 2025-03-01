@@ -10,13 +10,13 @@ export default function NavigationLayout({
     <div className='flex flex-row'>
       <div className='w-full md:w-44'>
         <ClientLinkButton href='/'>Logo</ClientLinkButton>
-        <ServerLinkButton href='/dashboard'>1. Dashboard</ServerLinkButton>
-        <ServerLinkButton href='/dashboard/invoices'>
+        <ClientLinkButton href='/dashboard'>1. Dashboard</ClientLinkButton>
+        <ClientLinkButton href='/dashboard/invoices'>
           2. Invoices
-        </ServerLinkButton>
-        <ServerLinkButton href='/dashboard/customers'>
+        </ClientLinkButton>
+        <ClientLinkButton href='/dashboard/customers'>
           3. Customers
-        </ServerLinkButton>
+        </ClientLinkButton>
       </div>
       <div className='flex-grow'>
         <div className='w-full bg-red-700'>
