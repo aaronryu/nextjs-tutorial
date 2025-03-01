@@ -3,8 +3,8 @@ export default async function InvoiceDetails({ params, searchParams }) {
   console.log(await searchParams)
 
   const { details } = await params
-  const type = details[0]
-  const desc = details[1]
+  const type = details?.[0]
+  const desc = details?.[1]
 
   return (
     <main className='text-center bg-blue-50 p-6'>
