@@ -8,6 +8,7 @@ export default async function InvoiceDetails({ params, searchParams }) {
   const type = details?.[0]
   const desc = details?.[1]
 
+  const { urgency } = await searchParams
   return (
     <>
       {type === undefined ? (
@@ -28,6 +29,7 @@ export default async function InvoiceDetails({ params, searchParams }) {
           어떤 요구사항인지 상세 내용을 볼까요?
           <div>- 타입은 {type},</div>
           <div>- 상세내용은 {desc}</div>
+          {urgency && <div>- 긴급정도는 {urgency}</div>}
         </main>
       )}
     </>
