@@ -1,11 +1,13 @@
+import Link from 'next/link'
+
 function LinkButton({ href, children }) {
   return (
-    <a
+    <Link
       href={href}
       className='border-2 border-solid p-[10px] border-white block'
     >
       {children}
-    </a>
+    </Link>
   )
 }
 
