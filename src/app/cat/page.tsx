@@ -15,12 +15,8 @@ export default function CatPage() {
   }, [])
 
   async function addFavorite(image_id, sub_id) {
-    const response = await fetch('https://api.thecatapi.com/v1/favourites', {
+    const response = await fetch('http://localhost:3000/api/cats/favorite', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Api-Key': process.env.NEXT_PUBLIC_CAT_API_KEY,
-      },
       body: JSON.stringify({
         image_id,
         sub_id,
